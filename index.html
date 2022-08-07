@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+        integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Bootstrap v5.2</title>
+    <style>
+        body::before{
+            content: '';
+            display: block;
+            height:2.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark text-white text-center text-sm-start py-1 p-lg-3 p-md-2 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Bootstrap</a>
+            <!--  عشان لمن تصغر القائمة بصير 3 خطوط navbar-expand-->
+            <!-- دايما بستنا منك navbar-expand تضيف مكان التحول مث md lg -->
+
+            <!-- ul.navbar-nav>li.nav-item*3>a.nav-link -->
+            <!-- ms-auto    margin start auto بتزيحها ع اليمين -->
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMine">
+                <span class="navbar-toggler-icon"></span><!-- شكل القائمة -->
+            </button>
+            <!-- هاد الزر للقائمة المنسدلة وبتحط فية id تاع القائمة -->
+            <div class="collapse navbar-collapse" id="navMine">
+                <ul class="navbar-nav ms-auto">
+                    <!--  لازم نعطيها id عتشان نستهدفها لمن بدنا زر المنسدل-->
+                    <li class="nav-item"><a href="#hero" class="nav-link">Get Started</a></li>
+                    <li class="nav-item"><a href="#Features" class="nav-link">Features</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Learn</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="#learn-bootstrap" class="dropdown-item active">Learn Bootstrap</a><li>
+                            <li><a href="#where-togo" class="dropdown-item">Where To Go Next</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#faq" class="nav-link">Ask my</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero -->
+    <section id="hero" class="bg-dark text-light text-center">
+        <div class="container">
+            <!-- d-flex  disply-flex -->
+            <!-- d-sm-flex الصغير ما تعمل فلكس -->
+            <div class="d-sm-flex align-items-center justify-content-center py-lg-4">
+                <!-- بنجيب صور من موقع unDraw -->
+                <div class="py-3">
+                    <h1 class="display-5">Learn <span class="text-primary">Bootstrap</span></h1>
+                    <p class="py-1 lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ducimus velit et
+                        sed repellendus eos, quasi aliquid cumque aspernatur maiores blanditiis dignissimos perspiciatis
+                        nisi nesciunt, veritatis recusandae, sunt tempora eveniet illum! Quia harum expedita ipsum
+                        incidunt, doloremque distinctio porro eveniet?</p>
+                    <button class="btn btn-primary">Get Started</button>
+
+                </div>
+                <img class="img-fluid w-50 " src="img/hero-img.svg" alt="undraw_Learning">
+            </div>
+        </div>
+    </section>
+    <!-- services -->
+    <section class="py-5">
+        <div class="container">
+
+            <div class="row text-center">
+                <h2 class="mb-4" id="Features">Features</h2>
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <!-- مهارة ctrl +d بحدد المتشابهات -->
+                    <div class="card bg-dark text-light mb-3 ">
+                        <!-- <img src="https://picsum.photos/300/200" alt="picsum.photos" class="card-img-top"> -->
+                        <!-- اشيع استخدام i للايقونات -->
+                        <!-- bi bi- لازم تحطهن -->
+                        <div class="h1 mt-3">
+                            <i class="bi bi-arrows-angle-contract"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-primary">Respsive</h4>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, reiciendis.
+                            </p>
+                            <a href="#" class="btn btn-primary">Lern More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm col-md-6 col-lg-4">
+                    <div class="card bg-dark text-light mb-3 ">
+                        <!-- <img src="https://picsum.photos/300/200" alt="picsum.photos" class="card-img-top"> -->
+                        <!-- اشيع استخدام i للايقونات -->
+                        <!-- bi bi- لازم تحطهن -->
+                        <div class="h1 mt-3">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-primary">Easy Work</h4>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, reiciendis.
+                            </p>
+                            <a href="#" class="btn btn-primary">Lern More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm col-md-6 col-lg-4">
+                    <div class="card bg-dark text-light mb-3 ">
+                        <!-- <img src="https://picsum.photos/300/200" alt="picsum.photos" class="card-img-top"> -->
+                        <!-- اشيع استخدام i للايقونات -->
+                        <!-- bi bi- لازم تحطهن -->
+                        <div class="h1 mt-3">
+                            <i class="bi bi-arrows-angle-expand"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title text-primary">Fast Working</h4>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, reiciendis.
+                            </p>
+                            <a href="#" class="btn btn-primary">Lern More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- what to learn -->
+    <section id="learn" class="py-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md">
+                    <img src="img/Programmer.svg" alt="Programmer" class="img-fluid">
+                </div>
+                <div class="col-md py-3">
+                    <h2 id="learn-bootstrap">Learn The Basics</h2>
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est saepe sit perspiciatis porro
+                        voluptas
+                        quas autem fuga repudiandae reprehenderit temporibus officia similique voluptates, natus ipsam
+                        vero
+                        quibusdam earum provident. Veniam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next -->
+    <section id="next" class="py-5 bg-dark text-light">
+        <div class="container">
+            <!-- flex-row-reverse نعكس بدل ما نغير مكان النص قبل الصورة -->
+            <div class="row align-items-center justify-content-center flex-row-reverse">
+                <div class="col-md">
+                    <img src="img/Coder thinking.svg" alt="Programmer" class="img-fluid">
+                </div>
+                <div class="col-md py-3">
+                    <h2 id="where-togo">Where to go Next</h2>
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est saepe sit perspiciatis porro
+                        voluptas
+                        quas autem fuga repudiandae reprehenderit temporibus officia similique voluptates, natus ipsam
+                        vero
+                        quibusdam earum provident. Veniam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- FAQ -->
+    <section class="py-5" id="faq">
+        <div class="container">
+            <h2 class="text-center mb-3">
+                Frequntly asked Question
+            </h2>
+        </div>
+        <!-- بتنجاب من موقع بوت ستراب -->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <!-- data-bs-parent="#accordionFlushExample" تضاف ف النص عشان لمن تقت وحدة بتسكر الاساسي ويشار بين الاقواس id الاساسي -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Question One.
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body py-3 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto,
+                        error
+                        omnis veniam maiores aut officiis.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Question Two.
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                        quos
+                        sunt corporis voluptatum delectus fuga?</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Question Three.
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body py-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt vel
+                        iste,
+                        enim a voluptatibus ab?</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">
+                CopyRight &copy; 2022 By Taj aldeen
+            </p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-2">
+                <i class="bi bi-arrow-up-circle h2"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
